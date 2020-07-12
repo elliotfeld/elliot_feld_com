@@ -27,8 +27,15 @@ body {
   background-color: white;
 }
 
+/* Hide welceom-section on mobile */
+@media (max-width: 545px) {
+  .welcome-section {
+    display: none;
+  }
+}
+
 .h1-title {
-  font-size: 10vw;
+  font-size: 14vw;
   color: #33363b;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -48,7 +55,7 @@ h4 {
 }
 
 .p-title {
-  font-size: 2vw;
+  font-size: 4vw;
   color: #33363b;
   margin-top: 0px;
 }
@@ -71,19 +78,48 @@ h4 {
   background-color: #33363b;
 }
 
-@media (max-width: 545px) {
-  .navbar {
-    display: none;
-  }
+#nav-title {
+  float: left;
 }
 
 .nav-list {
   float: right;
 }
 
-#nav-title {
-  float: left;
+@media (max-width: 545px) {
+  .navbar {
+    display: none;
+  }
 }
+/* Mobile navbar */
+.navbar-mobile {
+  display: none;
+  z-index: 9999;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #33363b;
+}
+
+.nav-list-mobile {
+  padding-right: 15px;
+  padding-left: 15px;
+  display: inline-block;
+}
+
+/* Show mobile nav on mobile ONLY */
+@media (max-width: 545px) {
+  .navbar-mobile {
+    display: inline-block;
+  }
+  }
 
 li a {
   display: block;
@@ -96,62 +132,6 @@ li a {
 li a:hover {
   background-color: white;
   color: #33363b;
-}
-
-/* Style The Dropdown Button FINAL */
-.dropbutton {
-background-color: #33363b;
-color: white;
-padding: 16px;
-border-radius: 2.5px;
-font-size: 16px;
-border: none;
-cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-z-index: 9999;
-top: 10px;
-position: fixed;
-display: none;
-}
-
-@media (max-width: 545px) {
-.dropdown {
-  display: inline-block;
-}
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-color: #33363b;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: rgb(187, 187, 187)}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbutton {
-background-color: #33363b;
 }
 
 .grid-container {
