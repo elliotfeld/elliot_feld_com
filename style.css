@@ -172,6 +172,7 @@ li a:hover {
 /* Videos on mobile */
   @media (max-width: 545px) {
       .grid-container {
+          scroll-margin-top: 45px;
           columns: 1;
           padding-top: 25px;
       }
