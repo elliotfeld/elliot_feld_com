@@ -39,7 +39,7 @@ body {
   flex-basis: auto;
   height: auto;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 130px;
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -72,7 +72,7 @@ h4 {
 }
 
 .p-title {
-  font-size: 4vw;
+  font-size: 5vw;
   color: #33363b;
   margin-top: 0px;
 }
@@ -172,9 +172,8 @@ li a:hover {
 /* Videos on mobile */
   @media (max-width: 545px) {
       .grid-container {
-          scroll-margin-top: 45px;
           columns: 1;
-          padding-top: 25px;
+          padding-top: 65px;
       }
   }
   
